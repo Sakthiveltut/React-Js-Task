@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(155, 194, 194); */
+}
+
+/* side navigation bar */
+.sideNavBar{
+    width: 250px;
+    height: 90vh;
+    position: fixed;
+    z-index: 1;
+    transition: 0.4s;
+    box-shadow: 2px 3px 0 0 rgb(205, 198, 198);
+    overflow: hidden;
+}
+.sidebarMenu a{
+    color: black;
+}
+.sidebarIcon{
+    color: blue;
+}
+.selected-card{
+    color: white;
+    background-color: blue;
+}
+.selected-card a{
+    color: white !important;
+}
+.selected-card i{
+    color: white !important;
+}
+
+/* ------------------------------------------ */
+
+.my-container{
+
+}
+
+/* Circular Progress Bar */
+.skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    background-color: #e5e7ea;
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#number{
+    font-weight: 600;
+    color: black;
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim 2s linear forwards;
+}
+@keyframes anim{
+    0%{
+        stroke-dashoffset: 450;
+    }
+
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Custom Radio Button  */
+.custom-radio input[type="radio"] {
+    display: none;
+}
+.custom-radio .radio-button {
+    width: 13px;
+    height: 13px;
+    background-color: #e5e7ea; 
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.custom-radio .radio-label {
+    margin-left: 10px;
+}
+.custom-radio input[type="radio"]:checked + .radio-button {
+    background-color: #165cfe; 
+}
+.custom-radio input[type="radio"]:checked + .radio-button::before {
+    font-size: 16px;
+    color: #333;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+}
+
+
+/* Custom Dropdown */
+.select-menu{
+    width: 150px;
+}
+.select-menu .select-btn{
+    display: flex;
+    background: #f4f5fb;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 15px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: absolute;
+    width: 150px;
+    z-index: 5;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 40px;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #d4ecf1;
+}
+.option i{
+    font-size: 15px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 15px;
+    color: #333;
+}
+
+/* Progress Bar Chart */
+.barcontainer{
+    background-color: #f3f7fe;
+    position: relative;
+    width: 12px;
+    height: 20px;
+    border-radius: 150px;
+  }
+    
+  .bar{
+    background-color: #4679f8;
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    animation: grow 1.5s ease-out forwards;
+    transform-origin: bottom;
+    border-radius: 150px;
+  }
+
+  .percentageValues li{
+    font-size: 10px;
+  }
+  
+  @keyframes grow{
+    from{
+      transform: scaleY(0);
+    }
+}
+@media screen and (max-width: 650px){
+    .progressBarChartText2{
+        font-size: 10px;
+        transform: rotate(180deg);
+        transform-origin: left bottom;
+        writing-mode: vertical-lr;
+    }
+
+    .my-container{
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (min-width: 650px){
+    .progressBarChartText2{
+        position:absolute;
+        top: 10px;
+        right:10px;
+    }
+    .progressBarChartText1
+    {
+        position:absolute;
+        top: 20px;
+        right:20px;
+    }
+    .leftSpace{
+        margin-left: 280px;
+    }
+
+}
