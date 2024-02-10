@@ -1,0 +1,290 @@
+.dashboard-container{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dashboard-container .card{
+  border-radius: 0;
+}
+/* Custom Dropdown */
+.select-menu{
+  width: 150px;
+}
+.select-menu .select-btn{
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  align-items: center;
+  border: 2px solid #dcdddc;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.select-menu .select-btn  .vertical-line{
+  width:1px;
+  height: 25px;
+  background-color: #dcdddc;
+}
+.select-btn i{
+  font-size: 15px;
+  transition: 0.3s;
+}
+.select-menu .options{
+  position: absolute;
+  width: 150px;
+  padding: 0;
+  z-index: 5;
+  background: #fff;
+  border: 1px solid #dcdddc;
+  display: none;
+}
+.select-menu.active .options{
+  display: block;
+}
+.options .option{
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  background: #fff;
+  border-color:none;
+}
+.options .option-text:hover{
+    background-color: blue;
+    color: white;
+}
+
+.option i{
+  font-size: 15px;
+  margin-right: 12px;
+}
+.option .option-text{
+  min-height: 20px;
+  font-size: 15px;
+  padding: 3px;
+  color: #333;
+  height: 100%;
+  width: 100%;
+}
+
+/* Month Dropdown */
+.month-select-menu{
+  width: auto;
+  height: 30px;
+}
+.month-select-menu:hover{
+  background-color: #ececed;
+}
+
+.month-select-menu .month-select-btn{
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 2px;
+  align-items: center;
+  border: 1px solid #dcdddc;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.month-select-btn i{
+  font-size: 15px;
+  transition: 0.3s;
+}
+.month-select-menu .month-options{
+  position: absolute;
+  width: auto;
+  z-index: 5;
+  margin-top: 20px;
+  padding: 0px;
+  background: #fff;
+  border: 1px solid #dcdddc;
+  display: none;
+}
+.month-select-menu.active .month-options{
+  display: block;
+}
+.month-options .month-option{
+  display: flex;
+  cursor: pointer;
+  padding: 15px;
+  border-bottom: 1px solid #dcdddc;
+  align-items: center;
+  background: #fff;
+}
+.month-options .month-option:hover{
+    background-color: #f6f7f7;
+}
+.month-option i{
+  font-size: 15px;
+  margin-right: 12px;
+}
+.month-option .month-option-text{
+  font-size: 15px;
+  color: #333;
+  height: 100%;
+  width: 100%;
+}
+
+/* Group by task dropdown */
+.group-select-menu{
+  width: 100%;
+}
+.group-select-menu .group-select-btn{
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  align-items: center;
+  border: 2px solid #dcdddc;
+  cursor: pointer;
+  background-color: #f5f4f5;
+}
+
+.group-select-menu .group-select-btn  .vertical-line{
+  width:3px;
+  height: 25px;
+  background-color: #dcdddc;
+}
+.group-select-btn i{
+  font-size: 15px;
+  transition: 0.3s;
+}
+.group-select-menu .group-options{
+  z-index: 5;
+  background: #fff;
+  display: none;
+}
+.group-select-menu.active .group-options{
+  display: block;
+}
+.group-options .group-option{
+  cursor: pointer;
+  align-items: center;
+  background: #fff;
+  border-color:none;
+}
+/* Refresh Button */
+.refreshBtn{
+  color:white;
+  background-color:#438bcb;
+  border:0;
+}
+.refreshBtn:hover{
+  background-color: #3378b4;
+}
+
+/* Dashboard Cards */
+.dashboardCards .card{
+  width: 320px;
+  height: 160px;
+}
+.DateRangePicker{
+  padding: 13px;
+}
+.DateRangePicker:hover{
+  cursor: pointer;
+  background-color: #f6f7f7;
+}
+.fa-pencil{
+  cursor: pointer;
+}
+
+
+/* Table  */
+.ant-table {
+  border-radius: 0 0 0 0 !important;
+}
+.ant-table-thead th {
+  background-color: #888989 !important;
+  border-radius: 0 0 0 0 !important;
+  padding: 2px 2px !important;
+  color: white !important;
+}
+.ant-table-tbody td {
+  background-color: #f8f9f8 !important;
+  padding: 2px 2px !important;
+}
+.ant-table-cell {
+  border-right: 1px solid #dcdcdd !important; 
+}
+
+.ant-table-thead th .ant-table-column-sorter {
+  color: white !important;
+}
+
+/* .my-table .ant-table-thead th {
+  pointer-events: none !important;
+} */
+
+
+/* Date Range Picker */
+
+.daterangepicker {
+  position: absolute !important;
+  border: none !important;
+}
+
+.daterangepicker .calendar {
+  position: relative; 
+}
+.daterangepicker .ranges {
+  position: absolute;
+  left: 10px; 
+}
+.daterangepicker .range_inputs {
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+.daterangepicker .cancelBtn{
+  margin: 10px; 
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 350px;
+}
+.daterangepicker .applyBtn
+ {
+  margin: 10px; 
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 422px;
+}
+
+.clearBtn{
+  margin: 10px; 
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 450px;
+  z-index: 10 !important;
+}
+
+
+/* Table3 */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9f8; /* Specify the background color for odd rows */
+}
+
+/* Popup Table meaasge */
+.popupAlert{
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(255,255,255,0.0);
+  transition: 0.6s top cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              0.1s background-color linear 0s;
+}
+
+btn-close:after {
+  border: 1px solid white  !important;
+}
+
+ .popupActive{
+  top: 0;
+  background-color: rgba(152,153,152,0.4);
+  height: 100%;
+  width: 100%;
+  transition: 0.3s top cubic-bezier(0.175, 0.885, 0.32, 1.275),
+  0.6s background-color linear 0.3s;
+}

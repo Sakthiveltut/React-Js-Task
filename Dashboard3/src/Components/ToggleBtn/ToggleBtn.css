@@ -1,0 +1,39 @@
+
+.radio-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1px 0;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+.b1{
+  position: relative;
+}
+.b2{
+  position: relative;
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+
+.radio-button .radio-label {
+  position: relative;
+  padding: 3px 5px;
+  border: 1px solid #dcdddc;
+  font-size: 13px;
+}
+
+.radio-button:hover {
+  background-color: #e9ecef;
+}
+
+.radio-button input[type="radio"]:checked + .radio-label {
+  background-color: #d4d4d4;
+  border: 1px solid #8c8c8c;
+  z-index: 1;
+}
+
+.radio-button input[type="radio"]:hover + .radio-label {
+  background-color: #edecec;
+}
