@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5F4F6;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.profileImg{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 150px;
+}
+
+.dashed-border{
+    border-left: 2px dashed rgb(154, 150, 150);
+    padding:20px;
+}
+@media screen and (max-width:991.11px){
+    .dashed-border{
+        border-left: 0;
+        border-top:  2px dashed rgb(154, 150, 150);
+    }
+}
+
+
+/* timeline */
+.timeline{
+    border-left: 1px solid #dddddd;
+    list-style: none;
+}
+.timeline .timeline-item{
+    position: relative;
+}
+.timeline .timeline-item:after{
+    position: absolute;
+    top: 0;
+}
+.timeline .timeline-item:after{
+    background-color: #dddddd;
+    height: 12px;
+    width: 11px;
+    content: "";
+    left: -38px;
+    border-radius: 50%;
+}
+/* ------------------------------------- */
+
+
+/* Breadcrump */
+
+/* -----------------------------------   */
+
+
+/* nav */
+ .profileNavImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.navBarSearch{
+    width:14rem; 
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #F5F4FA;
+}
+.navBar{
+    z-index: 2;
+    box-shadow: 0 2px 0 rgb(213, 211, 211);
+    position: sticky;
+    top:0;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+::placeholder{
+    color: #a594f8;
+}
+/* ------------------------------------- */
+
+
+/* side navigation bar */
+.sideNavBar{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    transition: 0.4s;
+}
+.active-nav {
+    margin-left: -100%;
+}
+
+.navbar-nav{
+    margin-left: 3rem;
+}
+/* ------------------------------------------ */
+.my-container {
+    transition: 0.4s;
+}
+/* responsive */
+@media screen and (min-width: 650px){
+
+    .sideNavBar{
+        width: 230px;
+        position: absolute;
+        margin-top: 1.7rem;
+        border-radius: 0 40px 0 0 ;
+    }
+    .my-container{
+        margin-left: 250px;
+    }
+    .navBar{
+        position: static;
+        height: 4rem;
+    }
+}
